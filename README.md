@@ -5,7 +5,9 @@ Caldav sync for Emacs Orgmode
 ### This fork
 
 This is a fork of https://github.com/dengste/org-caldav, with a few fixes
-applied.
+applied:
+
+* [Reset org-caldav-empty-calendar before syncing](https://github.com/knatsakis/org-caldav/commit/10426fe6dabcef2a24c6d0da7daf627bf1ea4bb9) / https://github.com/dengste/org-caldav/pull/169
 
 In order to use this fork with spacemacs, instead of
 https://github.com/dengste/org-caldav (the one in MELPA), replace:
