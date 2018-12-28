@@ -15,6 +15,8 @@ applied:
     - https://github.com/dengste/org-caldav/pull/167
 * [Bugfix for org-caldav-create-time-range: Incorrect number of args](https://github.com/niclasborlin/org-caldav/commit/6f5a68e58938d7d25356ec48d6ab621892b4cfd1)
     - https://github.com/dengste/org-caldav/pull/162
+* [Implement CLASS attribute of ics files](https://github.com/keinstein/org-caldav/commit/7172021ea213724f093b3ec754cfff48edc8b708)
+    - https://github.com/dengste/org-caldav/pull/161
 
 In order to use this fork with spacemacs, instead of
 https://github.com/dengste/org-caldav (the one in MELPA), replace:
