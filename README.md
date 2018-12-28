@@ -13,6 +13,8 @@ applied:
     - https://github.com/dengste/org-caldav/pull/167
 * [Correctly exclude skipped entries before ics export](https://github.com/renatofdds/org-caldav/commit/fdb42e1043885b16216209bb63f3e4e5769421cc):
     - https://github.com/dengste/org-caldav/pull/167
+* [Bugfix for org-caldav-create-time-range: Incorrect number of args](https://github.com/niclasborlin/org-caldav/commit/6f5a68e58938d7d25356ec48d6ab621892b4cfd1)
+    - https://github.com/dengste/org-caldav/pull/162
 
 In order to use this fork with spacemacs, instead of
 https://github.com/dengste/org-caldav (the one in MELPA), replace:
