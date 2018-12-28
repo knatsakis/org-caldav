@@ -19,6 +19,8 @@ applied:
     - https://github.com/dengste/org-caldav/pull/161
 * [Skip VTODO entries on CalDAV server](https://github.com/mrmekon/org-caldav/commit/aaf058d1db41a1fc145ac3e600c9d4abb8024105)
     - https://github.com/dengste/org-caldav/pull/144
+* [Do not add UIDs to entries that match org-caldav-skip-conditions](https://github.com/knatsakis/org-caldav/commit/c67a1ceb202ede574c098c6669a03521451bbbd2)
+    - https://github.com/dengste/org-caldav/pull/170
 
 In order to use this fork with spacemacs, instead of
 https://github.com/dengste/org-caldav (the one in MELPA), replace:
@@ -66,7 +68,13 @@ empty calendar on your server for using this package.
 will get an UID property (see doc-string of org-icalendar-store-UID
 for further details). If you don't want this, then *do not use this
 package*; there is just no way around that. It is the only reliable
-way to uniquely identify Org entries.
+way to uniquely identify Org entries. **N.B.**: You can use
+```org-caldav-skip-conditions``` in order to avoid adding a UID property
+to _all_ Org entries. E.g.:
+
+```(setq org-caldav-skip-conditions 'nottimestamp)```
+
+will only add UID properties to timestamped entries.
 
 ### IN A NUTSHELL
 
