@@ -17,6 +17,8 @@ applied:
     - https://github.com/dengste/org-caldav/pull/162
 * [Implement CLASS attribute of ics files](https://github.com/keinstein/org-caldav/commit/7172021ea213724f093b3ec754cfff48edc8b708)
     - https://github.com/dengste/org-caldav/pull/161
+* [Skip VTODO entries on CalDAV server](https://github.com/mrmekon/org-caldav/commit/aaf058d1db41a1fc145ac3e600c9d4abb8024105)
+    - https://github.com/dengste/org-caldav/pull/144
 
 In order to use this fork with spacemacs, instead of
 https://github.com/dengste/org-caldav (the one in MELPA), replace:
