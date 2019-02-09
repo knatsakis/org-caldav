@@ -37,6 +37,21 @@ dotspacemacs-additional-packages '(
          :repo "knatsakis/org-caldav")))
 ```
 
+In order to use `org-caldav-skip-conditions`, with possibly multiple predicates (that are ORed together), add the following:
+
+- If using a single calendar:
+
+`(setq org-caldav-skip-conditions '(nottimestamp scheduled ...))`
+
+- If using multiple calendars:
+```
+(setq org-caldav-calendars
+  '((:calendar-id ...
+     :inbox ...
+     :files ...
+     :skip-conditions (nottimestamp scheduled ...)))
+```
+
 **Minimum Emacs version needed**: 24.3
 
 CalDAV servers:
@@ -66,13 +81,11 @@ empty calendar on your server for using this package.
 
 **ALSO IMPORTANT**: When using this package, possibly all Org entries
 will get an UID property (see doc-string of org-icalendar-store-UID
-for further details). If you don't want this, then *do not use this
-package*; there is just no way around that. It is the only reliable
-way to uniquely identify Org entries. **N.B.**: You can use
+for further details). If you don't want this, you can use
 ```org-caldav-skip-conditions``` in order to avoid adding a UID property
 to _all_ Org entries. E.g.:
 
-```(setq org-caldav-skip-conditions 'nottimestamp)```
+```(setq org-caldav-skip-conditions '(nottimestamp))```
 
 will only add UID properties to timestamped entries.
 
